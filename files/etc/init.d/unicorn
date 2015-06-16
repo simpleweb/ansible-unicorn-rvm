@@ -96,6 +96,10 @@ setup ()
   export OLD_PID="$PID.oldbin"
   export RAILS_ENV=${RAILS_ENV}
 
+  if test -f /etc/default/unicorn; then
+    . /etc/default/unicorn
+  fi
+
   if
     [[ -f "${RAILS_ROOT}/config/unicorn.rb" ]]
   then
