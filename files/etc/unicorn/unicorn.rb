@@ -1,5 +1,5 @@
 # amount of unicorn workers to spin up
-worker_processes ${unicorn_workers}
+worker_processes {{ unicorn_workers }}
 
 # App location
 @app = Dir.pwd
