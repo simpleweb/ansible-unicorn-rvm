@@ -2,3 +2,4 @@
 rvm_root: /usr/local/rvm
 rvm_exe: /usr/local/rvm/bin/rvm
 rails_apps: []
+unicorn_workers: 2
